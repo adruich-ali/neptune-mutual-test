@@ -25,6 +25,7 @@ const Walletlogin = () => {
     return (
         <Container>
                 <h2>Connect to the wallet</h2>
+                <p>you should have Metamask extension on your browser!</p>
                 <ConnectionZone>
                 <Button onClick={connect}>Connect To Metamask</Button>
                 <Button onClick={disconnect}>Disconnect From Metamask</Button> 
@@ -50,6 +51,10 @@ const Container = styled.div`
             height: 80vh;
             h2{
                 padding-top: 1.2rem;
+            }
+            p{
+                padding-top: 1rem;
+                font-size: .6rem;
             }
             @media (max-width: 768px) {
             width: 100%;
